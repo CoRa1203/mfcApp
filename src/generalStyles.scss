@@ -1,0 +1,107 @@
+:root {
+    --white: rgba(255, 255, 255, 1);
+    --brownColor: rgba(98, 59, 42, 1);
+    --brownOpacity10: rgba(98, 59, 42, 0.1);
+    --brownOpacity20: rgba(195, 147, 103, 0.2);
+    --brownOpaciry90: rgba(98, 59, 42, 0.9);
+    --brownOpacity60: rgba(98, 59, 42, 0.6);
+    --blackContent: rgba(44, 42, 41, 1);
+    --attentionContent: rgba(224, 78, 57, 1);
+    --redOpacity60: rgba(231, 52, 46, 0.6);
+    --orangeOpacity60: rgba(243, 148, 0, 0.6);
+    --yellowOpacity60: rgba(254, 234, 18, 0.6);
+    --lightGreenOpacity60: rgba(152, 190, 13, 0.6);
+    --greenOpacity60: rgba(66, 166, 42, 0.6);
+    --marginBtn: 35px 0 0 25px;
+  }
+
+  @font-face {
+    font-family: 'PT Sans';
+    src: url('./PT Sans/PTSans-Regular.eot');
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+        url('./PT Sans/PTSans-Regular.woff2') format('woff2'),
+        url('./PT Sans/PTSans-Regular.woff') format('woff'),
+        url('./PT Sans/PTSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'PT Sans';
+    src: url('./PT Sans/PTSans-Bold.eot');
+    src: local('PT Sans Bold'), local('PTSans-Bold'),
+        url('./PT Sans/PTSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./PT Sans/PTSans-Bold.woff2') format('woff2'),
+        url('./PT Sans/PTSans-Bold.woff') format('woff'),
+        url('./PT Sans/PTSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  body {
+  background: var(--brownOpacity20);
+    font-family: 'PT Sans';
+    font-size: 16px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    background: #ffff;
+    max-width: 382px;
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+  
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid rgba(98, 59, 42, 1);
+    border-bottom: 1px solid rgba(98, 59, 42, 1);
+  }
