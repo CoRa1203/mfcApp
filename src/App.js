@@ -1,14 +1,13 @@
-import "./generalStyles.scss";
 
+import "./generalStyles.scss";
+import ServiceCategorySelection from "./pages/serviceCategorySelection/ServiceCategorySelection";
 
 function App() {
   return (
-    <div className="wrapper">
-      {/* wrapper - ограничивающий контейнер 382px */}
-      <div className="container">
+    <>
+      <ServiceCategorySelection />
       
-      </div>
-    </div>
+    </>
   );
 }
 

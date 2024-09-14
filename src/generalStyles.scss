@@ -13,6 +13,7 @@
     --lightGreenOpacity60: rgba(152, 190, 13, 0.6);
     --greenOpacity60: rgba(66, 166, 42, 0.6);
     --marginBtn: 35px 0 0 25px;
+
   }
 
   @font-face {
@@ -71,30 +72,47 @@
   h6 {
     margin: 0;
   }
-  
+  input{
+    background: none;
+  }
   input:focus {
     outline: none;
+ 
+  }
+
+  button{
+    all: unset;
+    cursor: pointer;
   }
   
   body {
-  background: var(--brownOpacity20);
     font-family: 'PT Sans';
     font-size: 16px;
+    color: var(--blackContent);
+  }
+  
+  .section{
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: var(--brownOpacity20);
   }
-  
-  .wrapper {
+  .wrapperFirst {
     background: #ffff;
     max-width: 382px;
     padding: 25px 20px;
     border-radius: 20px;
   }
   
-  
+  .wrapperSecond {
+    background: #ffff;
+    max-width: 1440px;
+    padding: 0 70px;
+    margin: 0 auto;
+  }
+
   .container{
     display: flex;
     flex-direction: column;
@@ -102,6 +120,8 @@
     width: 100%;
     margin-top: 25px;
     padding-bottom: 25px;
-    border-top: 1px solid rgba(98, 59, 42, 1);
-    border-bottom: 1px solid rgba(98, 59, 42, 1);
+  }
+
+  .marginTop30{
+    margin-top: 30px;
   }
