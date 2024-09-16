@@ -1,0 +1,24 @@
+.header-mini{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--brownColor);
+    padding-bottom: 25px;
+}
+
+.border-left{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.94px;
+    border-left: 1px solid var(--brownColor);
+    height: 93.13px;
+    padding-left: 20px;
+    color: var(--blackContent);
+}
+img{
+    width: 109px;
+    height: 45px;
+    margin-right: 20px;
+ }

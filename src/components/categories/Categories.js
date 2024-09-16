@@ -1,7 +1,7 @@
 import { serviceCategories } from "../../data/serviceCategories"
 import './Categories.scss'
 
-export default function Categories(){
+const Categories = function(){
     return(
     
         <div className="CategoriesBody">
@@ -9,3 +9,5 @@ export default function Categories(){
         </div>
     )
 }
+
+export default Categories;

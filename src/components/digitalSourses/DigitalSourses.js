@@ -6,9 +6,9 @@ import logoSFR from './../../imgMFC/logoSFR.svg'
 import logoRPHY from './../../imgMFC/logoRPHY.svg'
 import './DigitalSourses.scss'
 
-export default function DigitalSourses(){
+ const DigitalSourses = function(){
     return(
-        <div className="wrapperSecond marginTop30">
+        <div className="marginTop30">
       <H1 text='Электронные ресурсы'/>
 <div className="soursesLinks">
 <DigitalSoursesItem link="https://www.gosuslugi.ru/" image={logoGosuslugi}/>
@@ -20,3 +20,5 @@ export default function DigitalSourses(){
     </div>
     )
 }
+
+export default DigitalSourses;

@@ -4,7 +4,7 @@ import "./Search.scss";
 
 export default function Search() {
   return (
-    <div className="wrapperSecond marginTop30">
+    <div className="marginTop30">
       <div className="seachBody marginTop30">
        <H1 text='Жизненные ситуации'/>
         <form>

@@ -1,7 +1,10 @@
 import './ButtonBrown.scss'
 
-export default function ButtonBrown(props){
+ const ButtonBrown = function(props){
     return(
         <button className='ButtonBrown'><p>{props.text}</p></button>
     )
 }
+
+
+export default ButtonBrown;

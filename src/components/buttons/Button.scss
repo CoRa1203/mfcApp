@@ -1,0 +1,14 @@
+.btns{
+    width: 340px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: var(--brownOpacity90);
+    color: var(--white);
+    text-align: center;
+    margin: var(--marginBtn);
+    border: none;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
