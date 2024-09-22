@@ -8,6 +8,10 @@
   border-radius: 20px;
   background-color: var(--brownOpacity10);
   color: var(--brownOpacity60);
+  &-big{
+    width: 340px;
+    height: 200px;
+  }
 }
 
 .input:focus {
