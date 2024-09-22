@@ -1,0 +1,19 @@
+.radio input {
+  visibility: hidden; /* Скрываем input */
+  position: absolute;
+}
+
+.radio img {
+  cursor: pointer;
+  border-radius: 100%;
+  border: 2px solid transparent;
+}
+
+.radio input:checked + img {
+  opacity: 50%;
+}
+
+.img-sm{
+  width: 100%;
+  margin-right: 0;
+}
