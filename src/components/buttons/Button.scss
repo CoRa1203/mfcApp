@@ -12,3 +12,8 @@
     font-size: 16px;
     cursor: pointer;
 }
+
+.btns:hover {
+    background-color:var(--brownOpacity60);
+    transition: 0.7s;
+}

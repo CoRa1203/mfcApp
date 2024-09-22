@@ -1,4 +1,3 @@
-import HeaderMini from "../../components/header/HeaderMini";
 import Button from '../../components/buttons/Button'
 import "./../../generalStyles.scss";
 import AccountEntry from "../../components/accountEntry/AccountEntry";
