@@ -2,6 +2,7 @@ import Button from '../../components/buttons/Button'
 import "./../../generalStyles.scss";
 import AccountEntry from "../../components/accountEntry/AccountEntry";
 import { useState } from "react";
+import HeaderMini from '../../components/header/HeaderMini';
 // const URL_SERVER = '' путь к серверу
 const LoginEmployee = function() {
   const [loginParametr, setLoginParametr] = useState('')
@@ -24,7 +25,7 @@ const LoginEmployee = function() {
         <AccountEntry/>
         <form>
         <input value={loginParametr} onChange={(e) => setLoginParametr(e.target.value)}/>
-        <Button onClick={handleClickLogin}/>
+        <Button onClick={handleClickLogin}></Button>
         </form>
         </div>
       </div>
