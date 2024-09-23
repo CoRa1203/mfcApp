@@ -1,6 +1,7 @@
 .ButtonBrown{
     max-width: 327px;
 height: 55px;
+margin-top: 77px;
     color: var(--brownOpacity90);
     background: var(--brownOpacity10);
     font-size: 24px;
@@ -10,4 +11,9 @@ height: 55px;
     p{
         width: 246px;
     }
+}
+
+.ButtonBrown:hover{
+background: var(--beigeOpacity60);
+color: var(--white);
 }
