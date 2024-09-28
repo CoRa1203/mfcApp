@@ -1,6 +1,8 @@
 
 import "./generalStyles.scss";
 
+import ServiceSubmit from "./pages/serviceSubmit/ServiceSubmit";
+
 
 
 
@@ -9,7 +11,7 @@ import "./generalStyles.scss";
 function App() {
   return (
     <>
-
+<ServiceSubmit/>
     </>
   );
 }

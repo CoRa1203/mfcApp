@@ -1,7 +1,7 @@
 import HeaderMini from "../../components/header/HeaderMini";
 import Button from '../../components/buttons/Button';
 import "./../../generalStyles.scss";
-import Input from "../../components/input/input";
+import Input from "../../components/inputs/input/input";
 import "../personalDataInput/PersonalDataInput.scss";
 import AccountEntry from "../../components/accountEntry/AccountEntry";
 import Back from './../../imgMFC/Back.svg'

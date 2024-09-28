@@ -1,0 +1,29 @@
+.chosenService{
+    display: flex;
+    align-items: center;
+    
+}
+
+.chosenServiceText{
+        font-size: 20px;
+        line-height: 25.88px;
+        text-align: center;
+        color: var(--blackContent);
+        padding-left: 20px;
+}
+
+.img-info {
+    padding-left: 75px;
+    padding-top: 30px;
+}
+
+.img-back {
+    padding-left: 55px;
+}
+
+.chosenServiceTextarea{
+    border: 1px solid var(--brownOpacity60);
+    padding: 15px 17.5px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
