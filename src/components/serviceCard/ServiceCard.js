@@ -1,9 +1,9 @@
 import './ServiceCard.scss'
 
-const ServiceCard = function(){
+const ServiceCard = function(cardText){
     return (
-        <div className="ServiceCard">
-            <p className="ServiceCardText">Выдача, замена паспортов гражданина Российской Федерации, удостоверяющих личность гражданина Российской Федерации на территории Российской Федерации</p>
+        <div className="x ServiceCard">
+            <p className="ServiceCardText">{cardText.cardText}</p>
         </div> 
     )
 }

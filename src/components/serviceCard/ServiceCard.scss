@@ -1,9 +1,16 @@
 .ServiceCard{
     max-width: 1156px;
-    height: 69px;
+    min-height: 69px;
     margin: 0 auto;
     border: 1px solid var(--brownOpacity60);
     border-radius: 28px;
 padding: 11px 61px;
+display: flex;
+align-items: center;
 }
+
+.ServiceCard:not(:last-child){
+    margin-bottom: 25px;
+}
+
 

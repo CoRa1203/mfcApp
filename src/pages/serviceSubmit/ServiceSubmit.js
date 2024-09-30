@@ -4,8 +4,14 @@ import '../serviceSubmit/ServiceSubmit.scss'
 import AccountEntry from "../../components/accountEntry/AccountEntry";
 import Back from './../../imgMFC/Back.svg'
 import Info from './../../imgMFC/Info.svg'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ServiceSubmit = function() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/ServiceSelection'); 
+  };
   return (
     <div className="section"> 
     {/* className="section" применен flex для выравниван я по центру */}
@@ -25,7 +31,7 @@ const ServiceSubmit = function() {
         
         </div>
         <div className = "btn-personalDataInput">
-        <Button>ПОДТВЕРДИТЬ</Button>
+        <Button onClick={handleClick}>ПОДТВЕРДИТЬ</Button>
         </div>
         </div>
         </div>
