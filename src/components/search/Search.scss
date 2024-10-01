@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-form {
+.searchForm {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,13 +16,13 @@ form {
   border-radius: 20px;
 }
 
-form {
+.searchForm {
   position: relative;
-  input {
+  .searchInput {
     width: 450px;
     height: 38px;
   }
-  label {
+  .searchLabel {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;

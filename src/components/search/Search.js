@@ -7,10 +7,10 @@ export default function Search() {
     <div className="marginTop30">
       <div className="seachBody marginTop30">
        <H1 text='Жизненные ситуации'/>
-        <form>
+        <form className="searchForm">
           <div>
-            <input className="" id="input" autocomplete="on" />
-            <label for="input">Поиск</label>
+            <input className="searchInput" id="input" autocomplete="on" />
+            <label className="searchLabel" for="input">Поиск</label>
           </div>
           <button>
             <img src={loupeSearch} alt="loupeSearchImg" />

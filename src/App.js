@@ -30,9 +30,6 @@ function App() {
         <Route path="/ServiceCategoryProvidedAnotherReason" element={<ServiceCategoryProvidedAnotherReason />} />
       </Routes>
     </Router>
-
-      {/* <LoginEmployee /> */}
-      {/* <EntitySelection /> */}
     </>
   );
 }
