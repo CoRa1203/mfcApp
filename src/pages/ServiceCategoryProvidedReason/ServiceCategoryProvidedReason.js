@@ -3,8 +3,14 @@ import Button from '../../components/buttons/Button'
 import "./../../generalStyles.scss";
 import "./ServiceCategoryProvidedReason.scss"
 import AccountEntry from "../../components/accountEntry/AccountEntry";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ServiceCategoryProvidedReason = function() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/ServiceCategoryProvidedAnotherReason'); 
+  };
   return (
     <div className="section"> 
     {/* className="section" применен flex для выравниван я по центру */}
@@ -18,7 +24,7 @@ const ServiceCategoryProvidedReason = function() {
         по которой услуга не была<br/> оказана
         </p>
         <Button className={"SCPR-btn-1"}>НЕТ ДОКУМЕНТОВ</Button>
-        <Button className={"SCPR-btn"}>ДРУГАЯ ПРИЧИНА</Button>
+        <Button onClick={handleClick} className={"SCPR-btn"}>ДРУГАЯ ПРИЧИНА</Button>
         </div>
       </div>
     </div>

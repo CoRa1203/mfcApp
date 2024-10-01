@@ -10,10 +10,16 @@ import smile2 from "../../imgMFC/smile-2.svg"
 import smile3 from "../../imgMFC/smile-3.svg"
 import smile4 from "../../imgMFC/smile-4.svg"
 import smile5 from "../../imgMFC/smile-5.svg"
-
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const Feedback = function() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/ServiceCategoryProvidedReason'); 
+  };
+  
   return (
     <div className="section"> 
     {/* className="section" применен flex для выравниван я по центру */}
@@ -40,7 +46,7 @@ const Feedback = function() {
         <InputRadio name="sm-1" value="5" img ={smile5}></InputRadio>
         </div>
         <Input className={"input-big"}></Input>
-        <Button type="submit">ОТПРАВИТЬ</Button>
+        <Button onClick={handleClick} type="submit">ОТПРАВИТЬ</Button>
         </form>
         </div>
       </div>

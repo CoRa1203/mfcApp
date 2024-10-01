@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 const ServiceSubmit = function() {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate('/ServiceSelection'); 
+    navigate('/ServiceProvided'); 
   };
   return (
     <div className="section"> 
@@ -20,9 +20,9 @@ const ServiceSubmit = function() {
         {/* wrapper - ограничивающий контейнер 382px */}
         <HeaderMini/>
         <AccountEntry/>
-        <button className="img-info"> <img src={Info} alt="info" /> </button>
+        <button className="img-infoSubmit"> <img src={Info} alt="info" /> </button>
         <div className="chosenService">
-            <div className="img-back"> <img src={Back} alt="back" /> </div>
+            <div className="img-backSubmit"> <img src={Back} alt="back" /> </div>
             <div className="chosenServiceText text">
                 Выбранная услуга
             </div>

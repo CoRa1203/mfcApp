@@ -17,10 +17,10 @@ import { useNavigate } from 'react-router-dom';
       <Header/>
       <Search />
       <div className="btnsServisesAndMobile">
-        <ButtonBrown text="Инструкция по услугам" />
+        <ButtonBrown onClick={handleClick}  text="Инструкция по услугам" />
         <ButtonBrown text="Оказание услуги с телефона заявителя" />
       </div>
-      <Categories onClick={handleClick} />
+      <Categories />
       <DigitalSourses />
     </div>
   );

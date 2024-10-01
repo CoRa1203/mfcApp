@@ -12,7 +12,7 @@
     --yellowOpacity60: rgba(254, 234, 18, 0.6);
     --lightGreenOpacity60: rgba(152, 190, 13, 0.6);
     --greenOpacity60: rgba(66, 166, 42, 0.6);
-    --marginBtn: 35px 0 25px 0;
+    --marginBtn: 35px 0 0px 0;
     --beigeOpacity60: rgba(195, 147, 103,0.6)
   }
 
@@ -92,15 +92,18 @@
     color: var(--blackContent);
     font-style: normal;
     box-sizing: content-box;
+    background: var(--brownOpacity20);
+    
   }
   
   .section{
-    height: 100vh;
+margin-top: 25px;
+margin-bottom: 25px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--brownOpacity20);
+
     
   }
 
@@ -113,6 +116,7 @@
 
   .container{
     border-bottom: 1px solid var(--brownColor);
+    padding-bottom: 25px;
   }
 
 
