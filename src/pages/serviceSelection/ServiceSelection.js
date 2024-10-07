@@ -9,35 +9,31 @@ import "./ServiceSelection.scss"
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const ServiceSelection = function () {
+  // const [cardsList, setCardsList] = useState(cardsText); 
+const [searchText, setSearchText] = useState('');
+
   const navigate = useNavigate();
   const handleClick = () => {
     navigate('/ServiceSubmit'); 
   };
-  const [cardsItem, setCards] = useState(cardsText); /*передается список услуг*/
-  // const [count, setCount] = useState(0);
-  // setCards(response.data)
 
-  // async function fetchCards() {
-  //   const response = await axios.get("https://jsonplaceholder.typicode.com/posts")
+  const filteredList = cardsText.filter(card => card.cardText.toLowerCase().includes(searchText.toLowerCase()))
   
-  //   }
-  // setCount()
+ 
+
   return (
     <div className="wrapperSecond">
       <Header />
-      <Search />
-      <div className="btnsServisesAndMobile">
-        <ButtonBrown text="Инструкция по услугам" />
-      </div>
+      <Search searchText={searchText} setSearchText={setSearchText}/>
+        <ButtonBrown text="Инструкция по услугам" onClick={handleClick}/>
       <div className="cardList">
-      {cardsItem.map((card) => (
+      {filteredList.map((card) => (
         <ServiceCard cardText={card.cardText} />
       ))}
       </div>
       <DigitalSourses />
-
-      <ButtonBrown onClick={handleClick}/>
     </div>
   );
 };

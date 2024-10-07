@@ -2,7 +2,7 @@ import './ButtonBrown.scss'
 
  const ButtonBrown = function(props){
     return(
-        <button className='ButtonBrown'><p>{props.text}</p></button>
+        <button className='ButtonBrown' onClick={props.onClick}><p>{props.text}</p></button>
     )
 }
 
